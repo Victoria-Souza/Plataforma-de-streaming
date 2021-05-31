@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Se-MoPlay</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <!--responsividade-->
+    <link rel="stylesheet" href="./style/responsive.css">
+    <!--adicionar o favicon-->
+
+    <!--owl Css-->
+    <link rel="stylesheet" href="./style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="./style/owl/owl.theme.default.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+           <!--  <img  class="logo" src="./img/logo_semoplay.png" alt="logo"> -->
+           <h1 class="logo">SE-MOPLAY</h1> 
+            <nav> <!--tag navegação, utilizada para o menu-->
+                <a href="">Início</a>
+                <a href="">Filmes</a>
+                <a href="">Séries</a>
+                <a href="">Categorias</a>
+                <a href="">Minhas listas</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="filme_principal">
+            <div class="container">
+                <h3 class="titulo">GLEE</h3>
+                <p class="descricao">O professor de espanhol Will Schuester
+                     (Matthew Morrison) resolve comandar o coral da escola, Glee Club.
+                      Tentando dar nova vida ao grupo, ele procura diferentes alunos,
+                       populares e nerds, como Rachel Berry (Lea Michele), Kurt Hummel
+                       (Chris Colfer), Finn Hudson (Cory Monteith), Quinn Fabray (Dianna Agron)
+                        e Brittany Pierce (Heather Morris). Schuester tenta equilibrar a 
+                        sua vida pessoal, enquanto ensaia com os seus novos alunos, mas logo 
+                        começa a enfrentar as armadilhas da treinadora Sue Sylvester (Jane Lynch).</p>
+                <div class="botoes">
+                    <!--role é pra especificar a função do elemento-->
+                    <button role="button" class="botao">
+                        <i class="fas fa-play"></i> <!--icone do play-->
+                        Assistir Agora
+                    </button>
+                    <button  role="button" class="botao">
+                        <i class="fas fa-info-circle"></i> <!--icone de informação-->
+                        Mais informações
+                    </button>
+                </div>        
+            </div>
+            
+        </div>
+    </main>
+
+    <div class="carrosel_filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box_filme" src="./img/min_1.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box_filme" src="./img/min_2.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box_filme" src="./img/min_3.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box_filme" src="./img/min_4.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box_filme" src="./img/min_5.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box_filme" src="./img/min_6.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box_filme" src="./img/min_7.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box_filme" src="./img/min_8.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box_filme" src="./img/min_9.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box_filme" src="./img/min_10.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+     <!--link externo para usar o font awesome-->
+    <script src="https://kit.fontawesome.com/56aa89baaf.js" crossorigin="anonymous"></script>
+    <!--link do owl JS-->
+    <script src="./js/owl/jquery.min.js"></script>
+    <script src="./js/owl/owl.carousel.min.js"></script>
+    <!--link do setup do carrosel -->
+    <script src="./js/owl/setup.js"></script>
+
+</body>
+</html>

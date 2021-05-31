@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --azul_claro: rgb(0, 119, 182);
+    --azul_escuro: rgb(2, 62, 138);
+    --azul_escurao: rgb(2, 4, 68);
+    --cinza_azulado: rgb(166, 172, 204);
+    --laranja: rgb(231, 111, 81);  
+}
+ /*Elementos base*/
+body {
+    background-color: var(--azul_escurao);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 10px;
+    color: var(--laranja);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--cinza_azulado);
+    margin-right: 10px;
+    
+    
+}
+
+header nav a:hover {
+    color: rgb(212, 218, 253);
+} 
+
+/*Filme principal*/
+.filme_principal {
+    font-size: 16px;
+    /*imagem de fundo*/
+    /*linear-gradient é para criar um contraste entre a imagem de fundo com o texto*/
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/glee_capa.jpg'); 
+    background-size: cover;/*Para especificar o tamanho da imagem de background*/
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*Aqui vai ser na vertical*/
+    align-items: flex-start;
+
+}
+
+.filme_principal .titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.filme_principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.botao {
+    border: none;
+    background-color: rgba(0,0,0,.50);
+    color: white;
+
+    padding: 15px 20px;
+    margin-right: 15px;
+    font-size: 12px;
+    
+
+    cursor: pointer; /*Para o cursor mudam quando passar pelo botão*/
+    transition: .3s ease all; /*Cuida da parte da transição entre uma animação e outra*/
+}
+ /*Seletor para quando o mouse passar em cima do botão, mudar a formatação*/
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.filme_principal .container {
+    width: 70%;
+}
+
+.box_filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.carrosel_filmes {
+    margin-top: 10px;
+}
